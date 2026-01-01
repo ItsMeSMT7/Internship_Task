@@ -1,4 +1,3 @@
-Here is the complete, professional **README.md** file, formatted with clear highlights, structured boxes, and clean typography so you can copy and paste it directly.
 
 ***
 
@@ -119,3 +118,4 @@ gym-website/
 ## 🏁 **FINAL STATUS**
 > **✅ Task Completed Successfully**
 > This project meets all the given requirements and quality standards and is ready for final submission.
+
