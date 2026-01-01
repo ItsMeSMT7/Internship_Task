@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | GOLD GYM</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">GOLD GYM</div>
+                <div class="menu-toggle" id="mobile-menu">☰</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h1>Get In Touch With Us</h1>
+            <p style="text-align: center; font-size: 1.1rem; color: #5a6c7d; margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">Ready to start your fitness journey? Contact our professional team today and let us help you achieve your goals.</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 50px; align-items: start;">
+                
+                <form id="contactForm" class="contact-form">
+                    <h3 style="color: #667eea; margin-bottom: 1.5rem; font-size: 1.4rem; text-align: center;">Send Us a Message</h3>
+                    
+                    <div class="form-group">
+                        <label for="userName">Full Name *</label>
+                        <input type="text" id="userName" name="userName" placeholder="Enter your full name" required>
+                        <span class="error-msg" id="nameError">Please enter your full name.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userPhone">Contact Number *</label>
+                        <input type="tel" id="userPhone" name="userPhone" placeholder="(123) 456-7890" required>
+                        <span class="error-msg" id="phoneError">Please enter a valid 10-digit phone number.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userEmail">Email Address</label>
+                        <input type="email" id="userEmail" name="userEmail" placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userAddress">Address *</label>
+                        <textarea id="userAddress" name="userAddress" rows="4" placeholder="Enter your complete address" required></textarea>
+                        <span class="error-msg" id="addressError">Please enter your address.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userMessage">Message</label>
+                        <textarea id="userMessage" name="userMessage" rows="3" placeholder="Tell us about your fitness goals or any questions you have"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Send Message</button>
+                    <div id="formSuccess" style="display:none; color: #27ae60; margin-top:15px; text-align: center; font-weight: 600; background: rgba(39, 174, 96, 0.1); padding: 10px; border-radius: 8px;">✓ Thank you! We will contact you within 24 hours.</div>
+                </form>
+
+                <div class="gym-details">
+                    <h3>Contact Information</h3>
+                    <div style="margin-bottom: 2rem;">
+                        <p><strong>📞 Phone:</strong> +91 887525**** GOLD-GYM</p>
+                        <p><strong>✉️ Email:</strong> info@goldgym.com</p>
+                        <p><strong>📍 Address:</strong> Pune Highway, Near Balawant College, Vita 415 311</p>
+                    </div>
+                    
+                    <h4 style="color: #ffd700; margin-bottom: 1rem;">Business Hours</h4>
+                    <div style="line-height: 1.8;">
+                        <p><strong>Monday - Friday:</strong> 5:00 AM - 11:00 PM</p>
+                        <p><strong>Saturday:</strong> 6:00 AM - 10:00 PM</p>
+                        <p><strong>Sunday:</strong> <span style="color: red;">Holiday</span></p>
+                    </div>
+                    
+                    <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                        <h4 style="color: #ffd700; margin-bottom: 1rem;">Why Choose Gold Gym?</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.5rem;">✓ State-of-the-art equipment</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Certified personal trainers</li>
+                            <li style="margin-bottom: 0.5rem;">✓ 24/7 access for members</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Group fitness classes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 GOLD GYM. All rights reserved. | Building Stronger Communities Through Fitness</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>

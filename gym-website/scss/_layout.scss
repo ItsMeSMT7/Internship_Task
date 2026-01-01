@@ -1,0 +1,61 @@
+@import 'variables';
+@import 'mixins';
+
+header {
+    background-color: $secondary-color;
+    color: $text-light;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    nav {
+        @include flex-center(row, space-between, center);
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: $primary-color;
+        }
+
+        .nav-links {
+            @include flex-center();
+            gap: 30px;
+
+            @include tablet {
+                display: none; // Hidden for mobile toggle
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: $secondary-color;
+                padding: 20px;
+            }
+
+            &.active {
+                display: flex;
+            }
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            @include tablet { display: block; }
+        }
+    }
+}
+
+footer {
+    background-color: $secondary-color;
+    color: $text-light;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 50px;
+
+    .footer-grid {
+        @include grid-layout(repeat(auto-fit, minmax(250px, 1fr)));
+        margin-bottom: 20px;
+    }
+}
